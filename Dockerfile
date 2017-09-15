@@ -11,7 +11,7 @@ RUN apt-get update \
 	lld-5.0 \
 	make \
 	cmake \
-	googletest \
+	libgtest-dev \
 	google-mock \
 	libglfw3-dev \
 	libglm-dev \
