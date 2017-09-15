@@ -19,3 +19,5 @@ RUN apt-get update \
 	libassimp-dev \
 	qt5-default \
 	qttools5-dev-tools
+
+RUN cd /usr/src/gtest && cmake && make && cp *.a /usr/lib && cp *.so /usr/lib
