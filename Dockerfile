@@ -9,10 +9,9 @@ RUN apt-get update \
 	clang-5.0 \
 	lldb-5.0 \
 	lld-5.0 \
+	git \
 	make \
 	cmake \
-	libgtest-dev \
-	google-mock \
 	libglfw3-dev \
 	libglm-dev \
 	libspdlog-dev \
@@ -20,4 +19,9 @@ RUN apt-get update \
 	qt5-default \
 	qttools5-dev-tools
 
-RUN cd /usr/src/gtest && cmake && make && cp *.a /usr/lib && cp *.so /usr/lib
+RUN git clone https://github.com/google/googletest.git googletest && \
+	cd googletest && \
+	cmake . && \
+	make && \
+	make install && \
+	cd ..
