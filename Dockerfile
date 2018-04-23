@@ -9,6 +9,9 @@ RUN apt-get update \
 	clang-5.0 \
 	lldb-5.0 \
 	lld-5.0 \
+	libc++-dev \
+	llvm-5.0-dev \
+	libclang-5.0-dev \
 	git \
 	make \
 	cmake \
