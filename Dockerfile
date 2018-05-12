@@ -27,9 +27,9 @@ RUN apt-get update \
 
 RUN pip install conan
 
-RUN git clone https://github.com/google/googletest.git googletest && \
-	cd googletest && \
-	cmake . && \
-	make && \
-	make install && \
-	cd ..
+#RUN git clone https://github.com/google/googletest.git googletest && \
+#	cd googletest && \
+#	cmake . && \
+#	make && \
+#	make install && \
+#	cd ..
