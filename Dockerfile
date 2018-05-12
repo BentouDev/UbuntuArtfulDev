@@ -21,7 +21,9 @@ RUN apt-get update \
 	libassimp-dev \
 	qt5-default \
 	qttools5-dev-tools \
-	pip
+	python-pip \
+	python-dev \
+	build-essential 
 
 RUN pip install conan
 
