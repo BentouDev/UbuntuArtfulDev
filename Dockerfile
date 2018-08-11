@@ -20,7 +20,12 @@ RUN apt-get update \
 	libspdlog-dev \
 	libassimp-dev \
 	qt5-default \
+	qtdeclarative5-dev \
 	qttools5-dev-tools \
+	qtdeclarative5-qtquick2-plugin \
+	qt5-qmltooling-plugins \
+	qml-module-qtquick-controls \
+	qml-module-qtquick-layouts \
 	python-pip \
 	python-dev \
 	build-essential 
