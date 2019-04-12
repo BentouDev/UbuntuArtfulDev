@@ -25,7 +25,7 @@ RUN apt-get update \
 	python-dev \
 	build-essential 
 
-RUN pip install conan
+RUN pip install conan --upgrade
 
 #RUN git clone https://github.com/google/googletest.git googletest && \
 #	cd googletest && \
