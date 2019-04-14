@@ -30,4 +30,4 @@ RUN apt-get update \
 	python3-dev \
 	build-essential 
 
-RUN pip install conan --upgrade
+RUN pip3 install conan --upgrade
