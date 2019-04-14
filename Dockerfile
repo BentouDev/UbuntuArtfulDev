@@ -30,5 +30,8 @@ RUN apt-get update \
 	python3-dev \
 	build-essential 
 
-RUN pip3 install conan --upgrade
-RUN pip3 install conan_package_tools --upgrade
+RUN echo -e '#!/bin/bash\npip3 "$@"' > /usr/bin/pip && \
+    chmod +x /usr/bin/pip
+
+RUN pip install conan --upgrade
+RUN pip install conan_package_tools --upgrade
