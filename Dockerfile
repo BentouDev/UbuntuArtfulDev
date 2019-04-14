@@ -26,15 +26,8 @@ RUN apt-get update \
 	qt5-qmltooling-plugins \
 	qml-module-qtquick-controls \
 	qml-module-qtquick-layouts \
-	python-pip \
-	python-dev \
+	python3-pip \
+	python3-dev \
 	build-essential 
 
 RUN pip install conan --upgrade
-
-#RUN git clone https://github.com/google/googletest.git googletest && \
-#	cd googletest && \
-#	cmake . && \
-#	make && \
-#	make install && \
-#	cd ..
